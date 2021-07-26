@@ -20,7 +20,6 @@ h1 {
   height: 100vh;
   background: url("../images/background_w320.jpg") no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
 }
 .sub {
@@ -34,7 +33,6 @@ h1 {
     height: 100vh;
     background: url("../images/background_w853.jpg") no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   }
   h1 {
     font-size: 4rem;
@@ -45,11 +43,10 @@ h1 {
     height: 100vh;
     background: url("../images/background_w1228.jpg") no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     text-align: center;
   }
   h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -57,6 +54,5 @@ h1 {
     height: 100vh;
     background: url("../images/background_w1440.jpg") no-repeat;
     background-size: cover;
-    background-attachment: fixed;
   }
 }
