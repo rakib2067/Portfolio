@@ -1,0 +1,62 @@
+html {
+}
+body {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #000;
+  word-spacing: 1.5rem;
+}
+.hero {
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url("../images/background_w320.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.sub {
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 100vh;
+    background: url("../images/background_w853.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 100vh;
+    background: url("../images/background_w1228.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    height: 100vh;
+    background: url("../images/background_w1440.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
