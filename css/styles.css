@@ -130,3 +130,24 @@ a {
     padding-left: 0;
   }
 }
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon-container {
+  background-color: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex; /* we use inline-block, so that the block propery allows for the width and height properties to apply and the inline allows the component to be placed near other elements*/
+  justify-content: center;
+  align-items: center;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
