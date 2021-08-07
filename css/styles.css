@@ -399,3 +399,20 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Testimonial */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image > img {
+  width: 100%;
+  border-radius: 25px;
+}
+.testimonial__icon__container {
+  position: relative;
+}
+.testimonial__icon {
+  position: absolute;
+  top: 90;
+  right: 70;
+}
