@@ -506,7 +506,6 @@ a {
 .block {
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 .block__header {
   text-align: center;
@@ -515,7 +514,6 @@ a {
   padding: 6rem 2rem;
   background: #000;
   color: #7b858b;
-  border: 2px solid red;
 }
 .block__heading {
   margin-top: 0;
@@ -533,4 +531,30 @@ a {
 }
 .container {
   max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Nav */
+
+.nav {
+  background: black;
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+}
+.logo {
+  margin-right: 5rem;
+}
+.nav li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  display: inline;
+  margin-right: 5rem;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+.nav li:hover {
+  background-color: #fff;
+  color: black;
 }

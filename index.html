@@ -14,23 +14,27 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body style="padding: 5rem">
-    <section class="block">
-      <header class="block__header">
-        <h2 class="block__headings">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          eos!
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-left">
-      <h2 class="block__heading">Heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-        eos!
-      </p>
-    </section>
+  <body>
+    <nav class="nav">
+      <a href="/"><img src="" alt="Logo" class="logo" /></a>
+      <span class="icon-container">
+        <svg class="icon">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </span>
+
+      <ul class="nav__ul">
+        <a href="#">
+          <li>About Me</li>
+        </a>
+        <a href="#">
+          <li>Projects</li>
+        </a>
+        <a href="#">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </nav>
   </body>
   <script src="js/main.js"></script>
 </html>
