@@ -1,0 +1,98 @@
+/* table {
+  text-align: left;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  color: black;
+}
+td,
+th {
+  padding: 10px;
+}
+td {
+  border-bottom: 1px solid #c4dcf3;
+}
+th {
+  background-color: #427fef;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #eef7ff;
+} */
+
+/* Shadow
+.container {
+  height: 300px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  background-color: tomato;
+  border-radius: 10px;
+  box-shadow: 10px 10px lightgray;
+} */
+
+/* Flaots .boxes {
+  border: 3px solid lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background: gold;
+}
+.box-two {
+  background: tomato;
+}
+.box-three {
+  background: dodgerblue;
+} */
+
+/* grid */
+body {
+  color: #fff;
+  font-family: "Nunito Semibold";
+  text-align: center;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.content div {
+  background-color: #3bbced;
+  padding: 30px;
+}
+.content div:nth-child(even) {
+  background-color: #777;
+}
+.one {
+}
+.two {
+}
+.three {
+}
+.four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.four p {
+  border: 1px solid white;
+  padding: 20px;
+  margin: 0;
+}
+.five {
+}
+.six {
+}
