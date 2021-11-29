@@ -753,6 +753,7 @@ hr {
 
 .carousel .carousel__item--visible {
   display: block;
+  animation: fadeVisibility 0.5s;
 }
 .carousel__actions {
   display: flex;
@@ -789,6 +790,15 @@ hr {
 #carousel__button--next:hover {
   color: white;
   opacity: 1;
+}
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
 }
 @media screen and (min-width: 1024px) {
   .project__list {
