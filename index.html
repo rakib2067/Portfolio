@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- <nav class="nav collapsible collapsible--expanded">
+    <nav class="nav collapsible collapsible--expanded">
       <a href="/">
         <h1 class="nav__title">Rakib Ali</h1>
       </a>
@@ -25,51 +25,52 @@
       </svg>
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#">About</a></li>
-        <li class="nav__item"><a href="#">Project</a></li>
+        <li class="nav__item"><a href="#Projects">Project</a></li>
         <li class="nav__item"><a href="#">Skills</a></li>
         <li class="nav__item"><a href="#">Contact</a></li>
       </ul>
     </nav>
     <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--cols-2">
+      <div class="container grid grid--cols-2 block--skewed">
         <header class="block__header hero__content">
           <h1 class="block__heading">Web Developer</h1>
           <p class="hero__sub">
-            I'm a Graduate CS student focusing on web-development: React, Redux,
+            I'm a graduate CS student focusing on web-development: React, Redux,
             NodeJs and Django
           </p>
-          <a href="" class="btn btn--accent btn--stretched">Projects</a>
+          <a href="#Projects" class="btn btn--accent btn--stretched"
+            >Projects</a
+          >
         </header>
         <div class="image__container">
           <img class="hero__image" src="./images/rakib.jpeg" alt="" />
         </div>
       </div>
     </section>
-    <section class="block container">
+    <section id="Projects" class="block container">
       <header class="block__header">
-        <h2>Projects</h2>
+        <h2 class="project__heading">Projects</h2>
         <p>
           Projects I have undertaken during both my free time and my time at Uni
         </p>
       </header>
-    </section> -->
-
-    <section class="block">
-      <div class="container">
-        <div style="width: 30%" class="project">
+    </section>
+    <div class="project__list carousel">
+      <section class="block">
+        <div class="project carousel__item carousel__item--visible">
           <div class="project__image">
             <figure class="project__image-container">
-              <img src="images/testimonial.jpg" alt="" style="height: 100%" />
+              <img src="images/news.png" alt="" />
             </figure>
           </div>
           <div class="project__content">
             <div class="content">
-              <h2 class="project__title">Project Name</h2>
+              <h2 class="project__title">QM-News</h2>
               <!-- icon for link -->
               <p class="project__body">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                minus cumque dolorem est vel expedita necessitatibus, cupiditate
-                deserunt maiores fugiat?
+                A Fullstack Django application, wherein users were able to
+                create accounts, view news articles and filter based on their
+                own interests.
               </p>
               <p class="project__body">Rakib Ali</p>
               <div class="project__footer">
@@ -82,7 +83,96 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="project carousel__item">
+          <div class="project__image">
+            <figure class="project__image-container">
+              <img src="images/react-food.png" alt="" />
+            </figure>
+          </div>
+          <div class="project__content">
+            <div class="content">
+              <h2 class="project__title">React Food Delivery</h2>
+              <!-- icon for link -->
+              <p class="project__body">
+                A React project I made to practice custom hooks, Context API,
+                Forms and useReducer, connected to a firebase backend for
+                persistence
+              </p>
+              <p class="project__body">Rakib Ali</p>
+              <div class="project__footer">
+                <!-- Border Bottom -->
+                <hr />
+                <div class="project__badges">
+                  <!-- Badges for each tech used -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project carousel__item">
+          <div class="project__image">
+            <figure class="project__image-container">
+              <img src="images/redux-cart.png" alt="" />
+            </figure>
+          </div>
+          <div class="project__content">
+            <div class="content">
+              <h2 class="project__title">React Redux Cart</h2>
+              <!-- icon for link -->
+              <p class="project__body">
+                A React Delivery app which utilises Redux and Redux toolkit to
+                manage state across the UI and Cart. Firebase was used for data
+                persistence.
+              </p>
+              <p class="project__body">Rakib Ali</p>
+              <div class="project__footer">
+                <!-- Border Bottom -->
+                <hr />
+                <div class="project__badges">
+                  <!-- Badges for each tech used -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project carousel__item">
+          <div class="project__image">
+            <figure class="project__image-container">
+              <img src="images/news.png" alt="" />
+            </figure>
+          </div>
+          <div class="project__content">
+            <div class="content">
+              <h2 class="project__title">BookCompanion</h2>
+              <!-- icon for link -->
+              <p class="project__body">
+                A React Native App book cataloguing I developed for my Final
+                Year Project, which uses gamification, along with Google Books
+                API and a firebase backend to incentivise reading.
+              </p>
+              <p class="project__body">Rakib Ali</p>
+              <div class="project__footer">
+                <!-- Border Bottom -->
+                <hr />
+                <div class="project__badges">
+                  <!-- Badges for each tech used -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel__actions">
+          <button id="carousel__button--prev" aria-label="Previous Item">
+            <
+          </button>
+          <button id="carousel__button--next" aria-label="Next Item">></button>
+        </div>
+      </section>
+    </div>
+    <section class="block container">
+      <header class="block__header">
+        <h2>Technical Skills</h2>
+      </header>
     </section>
   </body>
   <script src="js/main.js"></script>
