@@ -150,10 +150,6 @@ a {
   margin-right: 2rem;
 }
 
-.list--tick {
-  list-style-image: url(../images/tick.svg);
-  padding-left: 3rem;
-}
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
@@ -352,14 +348,6 @@ a {
 }
 .card__header {
   position: relative;
-}
-.card--popular .card__header::before {
-  content: url("../images/popular.svg");
-  width: 40px;
-  display: inline-block;
-  position: absolute;
-  top: -6px;
-  right: 5%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -785,7 +773,7 @@ hr {
   justify-content: space-between;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
 }
 .carousel__actions button {
@@ -834,6 +822,9 @@ hr {
   }
 }
 @media screen and (min-width: 1024px) {
+  .carousel__actions {
+    top: 50%;
+  }
   .project__list {
     flex-direction: row;
   }
