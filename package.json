@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/rakib2067/Portfolio#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  },"resolutions": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "resolutions": {
     "@babel/preset-env": "7.13.8"
   }
 }
