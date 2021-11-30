@@ -109,7 +109,25 @@ a {
   background-color: var(--color-secondary);
   color: #fff;
 }
-
+.badge--green {
+  background-color: #44b78b;
+  color: #fff;
+}
+.badge--purple {
+  background-color: #7952b3;
+  color: #fff;
+}
+.badge--light {
+  background-color: #52565a;
+  color: #fff;
+}
+.badge--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.badge__list .badge {
+  margin-right: 1rem;
+}
 @media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
