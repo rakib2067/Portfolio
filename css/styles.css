@@ -879,13 +879,25 @@ hr {
   flex-direction: column;
   padding: 1rem;
 }
-.frontend {
+.top__skills h3 {
+  color: #b9c4cf;
+  margin-left: 1rem;
+  margin-bottom: 4rem;
+}
+.skill__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .skill__item {
   opacity: 0.6;
   text-align: center;
+  transition: all 0.15s;
+}
+.skill__item:hover {
+  opacity: 1;
+  color: #fff;
+  transform: scale(1.15);
 }
 .skill__item > p {
   font-size: 1.6rem;
@@ -893,4 +905,66 @@ hr {
 .skill__icon {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .top__skills {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .frontend,
+  .backend,
+  .database,
+  .languages {
+    width: 40%;
+  }
+  .skill__container {
+    justify-content: unset;
+  }
+  .skill__item {
+    margin-right: 2rem;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #232323;
+  padding: 4.8rem;
+}
+
+.footer h2 {
+  font-size: 6rem;
+  margin: 0;
+}
+.footer h2,
+.footer p {
+  color: #7b858b;
+  margin-bottom: 1rem;
+}
+.footer__body {
+  display: flex;
+  flex-direction: column;
+}
+.footer__icons {
+  margin-top: 2rem;
+}
+.footer *:hover {
+  opacity: 1;
+  color: #fff;
+}
+.footer * {
+  transition: opacity 0.15s;
+}
+.footer__icon--container a {
+  opacity: 0.3;
+  margin-right: 1rem;
+  cursor: unset;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__body {
+    justify-content: space-around;
+    align-items: center;
+  }
 }
