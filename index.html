@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -26,14 +28,14 @@
       <ul class="list nav__list collapsible__content">
         <li class="nav__item"><a href="#">About</a></li>
         <li class="nav__item"><a href="#Projects">Project</a></li>
-        <li class="nav__item"><a href="#">Skills</a></li>
-        <li class="nav__item"><a href="#">Contact</a></li>
+        <li class="nav__item"><a href="#Skills">Skills</a></li>
+        <li class="nav__item"><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--cols-2 block--skewed">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Web Developer</h1>
+          <h1 class="block__heading" data-aos="zoom-in-up">Web Developer</h1>
           <p class="hero__sub">
             I'm a graduate CS student focusing on web-development: React, Redux,
             NodeJs and Django
@@ -56,12 +58,12 @@
             CV</a
           >
         </header>
-        <div class="">
-          <img class="hero__image" src="./images/Programmer.png" alt="" />
+        <div class="hero__image--container">
+          <img data-aos="zoom-in" class="hero__image" src="./images/Programmer.png" alt="" />
         </div>
       </div>
     </section>
-    <section id="Projects" class="block container">
+    <section data-aos="fade-up" id="Projects" class="block container">
       <header class="block__header">
         <h2 class="project__heading">Projects</h2>
         <p>
@@ -69,7 +71,7 @@
         </p>
       </header>
       <div class="project__list carousel">
-        <div class="project carousel__item carousel__item--visible">
+        <div data-aos="fade-up" class="project carousel__item carousel__item--visible">
           <div class="project__image">
             <figure class="project__image-container">
               <img src="images/react-food.png" alt="" />
@@ -199,12 +201,12 @@
       </div>
     </section>
 
-    <section class="block block--dark">
+    <section data-aos="fade-up" id="Skills"class="block block--dark">
       <header class="block__header">
         <h2 class="block__heading">Technical Skills</h2>
       </header>
       <div class="top__skills">
-        <div class="frontend">
+        <div data-aos="fade-up" class="frontend">
           <h3>Frontend</h3>
         <div class="skill__container">
           <div class="skill__item">
@@ -291,7 +293,7 @@
         </div>
         </div>
         
-        <div class="backend">
+        <div data-aos="fade-down"class="backend">
           <h3>Backend</h3>
           <div class="skill__container">
             <div class="skill__item">
@@ -356,7 +358,7 @@
         </div>
        
       <div class="top__skills">
-        <div class="database">
+        <div data-aos="fade-down" class="database">
         <h3>Databases</h3>
         <div class="skill__container">
           <div class="skill__item">
@@ -403,7 +405,7 @@
         </div>
       </div>
       
-        <div class="languages">
+        <div data-aos="fade-up" class="languages">
         <h3>Languages</h3>
         <div class="skill__container">
           <div class="skill__item">
@@ -425,7 +427,7 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer id="Contact" class="footer">
       <div class="footer__body">
         <div class="footer__content">
           <h2>Get in touch.</h2>
@@ -442,6 +444,10 @@
       </div>
      
     </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script src="js/main.js"></script>
 </html>
