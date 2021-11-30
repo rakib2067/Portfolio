@@ -811,6 +811,14 @@ hr {
 #carousel__button--prev:hover {
   background: var(--color-accent);
 }
+.content a {
+  opacity: 0.5;
+  transition: opacity 0.15s;
+  cursor: unset;
+}
+.content a:hover {
+  opacity: 1;
+}
 #carousel__button--prev:hover,
 #carousel__button--next:hover {
   color: white;
