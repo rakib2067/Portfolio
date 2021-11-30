@@ -598,6 +598,10 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 3rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 4;
 }
 
 .nav__title {
@@ -823,6 +827,14 @@ hr {
   .project__list {
     flex-direction: row;
   }
+  .project img {
+    width: 100%;
+    max-width: 90rem;
+  }
+  .carousel {
+    width: 100%;
+    max-width: 90rem;
+  }
 }
 
 .wrapper {
@@ -837,4 +849,48 @@ hr {
   line-height: 110px;
   text-align: center;
   background-color: #ddd;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.cv {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+/* Skills */
+
+.top__skills {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.frontend {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill__item {
+  opacity: 0.6;
+  text-align: center;
+}
+.skill__item > p {
+  font-size: 1.6rem;
+}
+.skill__icon {
+  display: flex;
+  justify-content: center;
 }
