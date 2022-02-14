@@ -782,7 +782,8 @@ hr {
 }
 
 .carousel .carousel__item--visible {
-  display: block;
+  /* display: block; */
+  display: flex;
   animation: fadeVisibility 0.5s;
 }
 .carousel__actions {
