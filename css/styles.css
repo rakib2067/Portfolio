@@ -143,6 +143,18 @@ a {
   background-color: var(--color-accent);
   color: #fff;
 }
+.badge--postgres {
+  background-color: #0064a5;
+  color: #fff;
+}
+.badge--mongo {
+  background-color: rgb(17, 97, 73);
+  color: #fff;
+}
+.badge--docker {
+  background-color: #157aff;
+  color: #fff;
+}
 .badge__list .badge {
   margin-right: 1rem;
 }
